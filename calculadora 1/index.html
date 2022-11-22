@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+        <title>CALCULADORA 1</title>
+</head>
+<body>
+    <!--CRIANDO UM BOX, ASSIM FICARIA TUDO PERTO-->
+   <fieldset>
+    <legend> CALCULADORA 1 </legend>
+    <label>NUMERO 1: </label>
+    <input id="n1" type="number" placeholder="informe um numero">
+    <!--UTILIZANDO O ID PARA FICAR MAIS FACIL A LOCALIZAÇÃO NO JAVA -->
+    <!--TYPE NUMBER, PORQUE NAO QUERO COLOCAR LETRAS NA CAIXINHA-->
+    <br><br>
+    <label>NUMERO 2: </label>
+    <input id="n2" type="number" placeholder="informe um numero" >
+   <br><br>
+    <!--CRIANDO UM INTERATIVIDADE NA PAGINA-->
+    <!--BOTÃO PARA CADA AÇAO-->
+<button onclick="somar(n1,n2)" >SOMAR</button>
+<button onclick="subtrair(n1,n2)">SUBTRAIR</button>
+<button onclick="multiplicaçao(n1,n2)">MULTIPLICAR</button>
+<button onclick="divisao(n1,n2)">DIVISAO</button>
+<br><br>
+<p> O resultado é: <span></span></p><!--COLOCANDO O RESULTADO NO FINAL-->
+</fieldset>
+<script src="script.js"></script>
+
+
+</body>
+</html>
